@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Cats from "../Componentes/Cats";
 import Dogs from "../Componentes/Dogs";
 import Home from "../Componentes/Home";
+import * as S from "../Styles/styles-rotas"
 
 const Rotas = () => {
     return (
@@ -21,18 +22,15 @@ export default Rotas
 
 const Rota = ({ rota1, rota2, rota3 }) => {
     return (
-        <nav>
-            <ul>
+        <S.Nav>
+            <S.Ul>
                 <li>
-                    <Link to="/home">{rota1}</Link>
+                    <S.Core to="/home">{rota1}</S.Core>
                 </li>
                 <li>
-                    <Link to="/dogs">{rota2}</Link>
+                    <S.Core to="/dogs">{rota2}</S.Core>
                 </li>
-                <li>
-                    <Link to="/cats">{rota3}</Link>
-                    </li>
-            </ul>
-        </nav>
+            </S.Ul>
+        </S.Nav>
     )
 }
