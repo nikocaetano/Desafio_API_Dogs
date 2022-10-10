@@ -10,7 +10,7 @@ const Rotas = () => {
         <BrowserRouter>
         <Rota rota1="Sobre nós" rota2="Adote um doguinho" rota3="Adote um gatinho"/>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/dogs" element={<Dogs />} />
                 <Route path="/cats" element={<Cats />} />
             </Routes>
